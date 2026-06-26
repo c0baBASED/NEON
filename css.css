@@ -1,0 +1,20 @@
+* { margin: 0; padding: 0; box-sizing: border-box; overflow: hidden; user-select: none; }
+body { background: #05050b; font-family: 'Courier New', Courier, monospace; color: #fff; }
+#gameCanvas { display: block; margin: 0 auto; background: #020205; box-shadow: 0 0 30px rgba(0,255,200,0.15); }
+#ui { position: absolute; top: 10px; left: 10px; pointer-events: none; }
+.bar { width: 200px; height: 15px; background: #222; margin-bottom: 5px; border: 1px solid #444; border-radius: 3px; overflow: hidden; }
+.fill { height: 100%; width: 100%; transition: width 0.1s; }
+#hp-fill { background: #ff3355; box-shadow: 0 0 10px #ff3355; }
+#xp-fill { background: #33ffaa; box-shadow: 0 0 10px #33ffaa; }
+#stats { font-size: 14px; text-shadow: 1px 1px 2px #000; line-height: 1.4; color: #00ffcc; font-weight: bold; }
+#weapon-status { font-size: 14px; color: #ffff33; margin-top: 5px; text-shadow: 1px 1px 2px #000; }
+#controls-tip { position: absolute; bottom: 10px; left: 10px; color: #888; font-size: 12px; background: rgba(0,0,0,0.6); padding: 5px 10px; border-radius: 4px; }
+#screen-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; pointer-events: auto; background: rgba(5, 5, 11, 0.9); padding: 30px; border: 2px solid #ff3355; box-shadow: 0 0 20px #ff3355; border-radius: 8px; }
+
+#easter-egg-screen { display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; pointer-events: auto; background: rgba(2, 2, 5, 0.95); padding: 40px; border: 2px dashed #ffff33; box-shadow: 0 0 30px rgba(255, 255, 51, 0.3); border-radius: 12px; max-width: 500px; z-index: 999; }
+#easter-egg-screen h2 { color: #ffff33; font-size: 2rem; text-shadow: 0 0 15px #ffff33; margin-bottom: 20px; }
+#easter-egg-screen p { font-size: 15px; line-height: 1.6; color: #e0e0ff; text-align: justify; margin-bottom: 25px; }
+
+.btn { background: #111; color: #00ffcc; border: 2px solid #00ffcc; padding: 10px 20px; font-weight: bold; cursor: pointer; font-family: inherit; margin-top: 15px; box-shadow: 0 0 10px rgba(0,255,200,0.3); }
+.btn:hover { background: #00ffcc; color: #111; }
+h1 { font-size: 3rem; color: #ff3355; text-shadow: 0 0 20px #ff3355; margin-bottom: 10px; }

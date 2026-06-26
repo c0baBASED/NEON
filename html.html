@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="ui">
+        <div id="stats">NÍVEL: <span id="lbl-lvl">1</span> | ANDAR: <span id="lbl-floor">1</span>/10</div>
+        <div class="bar"><div id="hp-fill" class="fill"></div></div>
+        <div class="bar"><div id="xp-fill" class="fill"></div></div>
+        <div id="stats-detalhes" style="font-size: 13px; color: #00ffcc;">
+            ATQ: <span id="lbl-atq">10</span> | DEF: <span id="lbl-def">5</span> | PONTOS: <span id="lbl-pts">0</span>
+        </div>
+        <div id="weapon-status">ARMA: <span id="lbl-weapon">Rifle Plasma</span></div>
+    </div>
+
+    <div id="controls-tip">WASD/Setas: Mover | Clique: Atirar | Teclas 1, 2, 3: Armas | P: Upgradear | Código secreto: neon</div>
+
+    <div id="screen-msg">
+        <h1 id="msg-title">NEON</h1>
+        <p id="msg-desc">O algoritmo corrompeu a realidade. Suba os 10 andares e destrua a Singularidade. O Futuro de NEON depende de você!.</p>
+        <button class="btn" id="btn-action" onclick="startGame()">INICIAR JORNADA</button>
+    </div>
+
+    <div id="easter-egg-screen">
+        <h2>TRANSMISSÃO DO ARQUITETO</h2>
+        <p>Neon se passa em um futuro distante no mesmo universo de The Last Kastle. Obrigado por jogar meu jogo! ass: c0ba</p>
+        <button class="btn" style="color: #ffff33; border-color: #ffff33; box-shadow: 0 0 10px rgba(255,255,51,0.3);" onclick="closeEasterEgg()">VOLTAR À REALIDADE</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
